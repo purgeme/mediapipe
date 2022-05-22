@@ -42,7 +42,7 @@ node {
   output_stream: "TENSORS:landmark_tensors"
   options: {
     [mediapipe.InferenceCalculatorOptions.ext] {
-      model_path: "mediapipe/modules/holistic_landmark/hand_recrop.tflite"
+      model_path: "$PROJECT_MEDIAPIPE_HOME/mediapipe/modules/holistic_landmark/hand_recrop.tflite"
       delegate { xnnpack {} }
     }
   }

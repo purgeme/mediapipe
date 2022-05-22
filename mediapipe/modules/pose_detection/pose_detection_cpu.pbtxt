@@ -71,7 +71,7 @@ node {
   output_stream: "TENSORS:detection_tensors"
   options: {
     [mediapipe.InferenceCalculatorOptions.ext] {
-      model_path: "mediapipe/modules/pose_detection/pose_detection.tflite"
+      model_path: "$PROJECT_MEDIAPIPE_HOME/mediapipe/modules/pose_detection/pose_detection.tflite"
       delegate {
         xnnpack {}
       }

@@ -24,7 +24,7 @@ node {
         options: {
           [mediapipe.ConstantSidePacketCalculatorOptions.ext]: {
             packet {
-              string_value: "mediapipe/modules/hand_landmark/hand_landmark_lite.tflite"
+              string_value: "$PROJECT_MEDIAPIPE_HOME/mediapipe/modules/hand_landmark/hand_landmark_lite.tflite"
             }
           }
         }
@@ -34,7 +34,7 @@ node {
         options: {
           [mediapipe.ConstantSidePacketCalculatorOptions.ext]: {
             packet {
-              string_value: "mediapipe/modules/hand_landmark/hand_landmark_full.tflite"
+              string_value: "$PROJECT_MEDIAPIPE_HOME/mediapipe/modules/hand_landmark/hand_landmark_full.tflite"
             }
           }
         }
